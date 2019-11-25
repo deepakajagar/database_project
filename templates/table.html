@@ -1,0 +1,56 @@
+<html>
+<head>
+<script type="text/javascript" src="C:\Users\Admin\Desktop\Ilaa\DB Project\Remember\js\Table_script.js"></script>
+</head>
+<body>
+<div id="wrapper">
+<table align='center' cellspacing=2 cellpadding=5 id="data_table" border=1>
+<!-- <tr>
+<th>Name</th>
+<th>Talent</th>
+<th>Category</th>
+<th>Day</th>
+<th>Slot</th>
+</tr> -->
+  <th>
+    <!-- <th>Name</th> -->
+    <th>Name</th>
+    <th>USN</th> 
+    <th>Position</th>
+    <th>Number</th>
+  </th>
+
+<!-- <tr>
+<td><input type="text" id="new_name"></td>
+<td><input type="text" id="new_talent"></td>
+<td><input type="text" id="new_categ"></td>
+<td><input type="text" id="new_day"></td>
+<td><input type="text" id="new_slot"></td>
+</tr> -->
+{%for column in data%}
+ <!--  <tr>
+    <th>{{column['name']}}</th>
+    <th>{{column['usn']}}</th> 
+    <th>{{column['position']}}</th>
+    <th>{{column['telephone']}}</th>
+  </tr> -->
+
+  <tr>
+    <td>{{column['']}}</td>
+    <td>{{column['name']}}</td>
+    <td>{{column['usn']}}</td> 
+    <td>{{column['position']}}</td>
+    <td>{{column['tele']}}</td>
+  </tr>
+{%endfor%}
+<!-- <tr>
+  <td><input type="button" class="add" value="Add Participant"></td>
+  <td><input type="button" class="add" value="Edit"></td>
+  <td><input type="button" class="add" value="Delete Participant"></td>
+</tr> -->
+
+</table>
+
+</body>
+</html>
+

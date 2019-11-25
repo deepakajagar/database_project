@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+/*.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}*/
+
+/* Float cancel and signup buttons and add an equal width */
+.updatebtn {
+  float: left;
+  width: 20%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .updatebtn {
+     width: 100%;
+  }
+}
+</style>
+<body>
+
+<form method="POST"  style="border:1px solid #ccc">
+  <div class="container">
+    <h1>Update Form</h1>
+    <p>Please fill in this form to update scoreboard</p>
+    <hr>
+    <label for="Branch"><b>Enter Branch</b></label>
+    <!-- <input type="text" placeholder="Branch" name="branch" required><br> -->
+    <!-- <label for="branch"><b>Branch</b></label> -->
+    <!-- <input type="text" placeholder="Enter Branch" name="branch" required> -->
+
+   <!--  <form action="/action_page.php"> -->
+    <br><br>
+      <select name="Branch">
+        <option value=" blank">....</option>
+        <option value="Civil">Civil</option>
+        <option value="Computers">Computers</option>
+        <option value="EEE">EEE</option>
+        <option value="Mechanical">Mechanical</option>
+      </select>
+    <br><br>
+
+    <label for="Sport"><b>Enter the Sport</b></label>
+    <!-- <input type="text" placeholder="Sport" name="sport" required><br> -->
+    <!-- <label for="branch"><b>Enter the BBranch</b></label> -->
+    <!-- <input type="text" placeholder="Branch" name="branch" required> -->
+    <br><br>
+      <select name="Sport">
+        <option value=" blank">....</option>
+        <option value="Tabletennis">Tabletennis</option>
+        <option value="Basketball">Basketball</option>
+        <option value="Badminton">Badminton</option>
+        <!-- <option value="ME">Mechanical Engineering</option> -->
+      </select>
+    <br><br>
+    <label for="points"><b>Points</b></label>
+    <p>Note: Please enter the updated points that need to be reflected in the table!</p>
+    <input type="text" placeholder="Enter Points" name="points" required>
+
+
+
+<!-- 
+
+    <label for="passyear"><b>Year of Passing Out</b></label>
+    <input type="text" placeholder="Enter Year of Passing Out" name="passyear" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required> -->
+
+    <!-- <label for="psw-repeat"><b>Repeat Password</b></label> -->
+    <!-- <input type="password" placeholder="Repeat Password" name="psw-repeat" required> -->
+    
+    
+    <!-- 
+    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p> -->
+
+    <!-- <div class="clearfix"> -->
+      <!-- <button type="button" class="cancelbtn" >Cancel</button> -->
+      <!-- <form action="http://localhost:5000/update/"> -->
+      <button type="submit" class="updatebtn" action="/gupmember/">Update Table</button>
+      <!-- </form> -->
+    <!-- </div> -->
+  </div>
+</form>
+
+</body>
+</html>

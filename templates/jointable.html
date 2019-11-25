@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+<script type="C:\Users\Deepanjali\Desktop\Deepanjali\NIE\DB Project\database\Remember\js\Table_script.js"></script>
+</head>
+
+<body>
+<div id="wrapper">
+<table align='center' cellspacing=2 cellpadding=5 id="data_table" border="1">
+
+  <th>
+    <th>Name</th>
+    <th>USN</th>
+    <th>Position</th>
+    <th>Committee Name</th>
+  </th>
+
+
+{%for column in data%}
+
+
+  <tr>
+    <td>{{column['']}}</td>
+    <td>{{column['name']}}</td>
+    <td>{{column['usn']}}</td> 
+    <td>{{column['position']}}</td>
+    <td>{{column['cname']}}</td>
+  </tr>
+
+{%endfor%}
+
+
+
+
+
+
+</table>
+</body>
+</html>

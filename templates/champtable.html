@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+<script type="C:\Users\Deepanjali\Desktop\Deepanjali\NIE\DB Project\database\Remember\js\Table_script.js"></script>
+</head>
+
+<body>
+<div id="wrapper">
+<table align='center' cellspacing=2 cellpadding=5 id="data_table" border="1">
+
+  <th>
+    <th>Sport</th>
+    <th>Civil</th>
+    <th>Computers</th>
+    <th>EEE</th>
+    <th>Mechanical</th>
+    <!-- <th>SoftBall</th>
+    <th>Badminton</th>
+    <th>Ball Badminton</th>
+    <th>Volleyball</th>
+    <th>Throwball</th>
+    <th>Cricket</th>
+    <th>TOTAL</th> -->
+  </th>
+
+
+{%for column in data%}
+
+
+  <tr>
+    <td>{{column['']}}</td>
+    <td>{{column['Sports']}}</td>
+    <td>{{column['Civil']}}</td> 
+    <td>{{column['Computers']}}</td>
+    <td>{{column['EEE']}}</td>
+    <td>{{column['Mechanical']}}</td>
+    <!-- <td>{{column['softball']}}</td>
+    <td>{{column['badminton']}}</td>
+    <td>{{column['ballbadminton']}}</td>
+    <td>{{column['volleyball']}}</td>
+    <td>{{column['throwball']}}</td>
+    <td>{{column['cricket']}}</td>
+    <td>{{column['total']}}</td> -->
+  </tr>
+
+{%endfor%}
+
+
+
+
+
+
+</table>
+</body>
+</html>

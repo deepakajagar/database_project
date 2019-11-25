@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+.newspaper {
+  -webkit-column-count: 3; /* Chrome, Safari, Opera */
+ /* -moz-column-count: 3; /* Firefox */*/
+  column-count: 3;
+
+  -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+  /*-moz-column-gap: 40px; /* Firefox */*/
+  column-gap: 40px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #3f3f3f;
+}
+
+/*.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 200px;
+  height: 50px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}*/
+
+.img {
+  color: grey;
+  font-size: 15px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+</style>
+</head>
+<body>
+
+
+
+
+ADMINISTRATOR PAGE!!!!!!!!!!!!!!
+   <div class="column">
+    <div class="card">
+      <!-- <h3>Card 3</h3>
+      <p>Some text</p>
+      <p>Some text</p> -->
+      <img src="C:\Users\Deepanjali\Desktop\Deepanjali\NIE\DB Project\database\images\top3.jpg" class="w3-circle" alt="Office Bearers" style="width:100%" height="250px" style="border-radius: 50px">
+      <p style="color: white"></p>
+      <form action="http://localhost:5000/top_3/">
+      <button type="Office Bearers" action="/top_3/">Office Bearers</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      
+       <img src="C:\Users\Deepanjali\Desktop\Deepanjali\NIE\DB Project\database\images\cultural!.jpg" class="w3-circle" alt="Cultural" style="width:100%" height="250px" style="border-radius: 50px">
+     
+      <form action="http://localhost:5000/admin_cultural/">
+      <button type="Cultural Committee" action="/admin_cultural/">Cultural Committee</button>
+      </form>
+    </div>
+  </div>
+  
+
+  <!-- 
+  <div class="column">
+    <div class="card">
+      
+       <img src="C:\Users\Deepanjali\Desktop\Deepanjali\NIE\DB Project\database\images\spons!.jpg" class="w3-circle" alt="Sponsorship" style="width:100%" height="250px" style="border-radius: 50px">
+      
+      <form action="http://localhost:5000/admin_sponsorship/">
+      <button type="Sponsorship Committee" action="/admin_sponsorship/">Sponsorship Committee</button>
+      </form>
+    </div>
+  </div>  -->
+
+
+
+  <div class="column">
+    <div class="card">
+      
+       <img src="C:\Users\Deepanjali\Desktop\Deepanjali\NIE\DB Project\database\images\design.jpg" class="w3-circle" alt="Design" style="width:100%" height="250px" style="border-radius: 50px">
+     
+      <form action="http://localhost:5000/admin_design/">
+      <button type="Design Committee" action="/admin_design/">Design Committee</button>
+      </form>
+    </div>
+  </div> 
+
+  <div class="column">
+    <div class="card">
+      <!-- <h3>Card 4</h3>
+      <p>Some text</p>
+      <p>Some text</p> -->
+       <img src="C:\Users\Deepanjali\Desktop\Deepanjali\NIE\DB Project\database\images\mark.jpg" class="w3-circle" alt="Marketin" style="width:100%" height="250px" style="border-radius: 50px">
+      <!-- <p style="color: white">Check out the Cultural Events of this year!</p> -->
+      <form action="http://localhost:5000/admin_marketing/">
+      <button type="Marketing Committee" action="/admin_marketing/">Marketing Committee</button>
+    </form>
+    </div>
+  </div> 
+
+
+  <div class="column">
+    <div class="card">
+       <img src="C:\Users\Deepanjali\Desktop\Deepanjali\NIE\DB Project\database\images\mark.jpg" class="w3-circle" alt="displayalldata" style="width:100%" height="250px" style="border-radius: 50px">
+      <!-- <p style="color: white">Check out the Cultural Events of this year!</p> -->
+      <form action="http://localhost:5000/create_usingjoin/">
+      <button type="ALL" action="/create_usingjoin/">ALL</button>
+    </form>
+    </div>
+  </div> 
+
+<!--   <div class="column">
+    <div class="card"> -->
+      <!-- <h3>Card 4</h3>
+      <p>Some text</p>
+      <p>Some text</p> -->
+      <!--  <img src="C:\Users\Deepanjali\Desktop\Deepanjali\NIE\DB Project\database\recep.jpg" class="w3-circle" alt="Reception" style="width:100%" height="250px" style="border-radius: 50px"> -->
+      <!-- <p style="color: white">Check out the Cultural Events of this year!</p> -->
+   <!--    <form action="http://localhost:5000/admin_reception/">
+      <button type="Reception Committee" action="/admin_reception/">Reception Committee</button>
+      </form>
+    </div>
+  </div> 
+
+  <div class="column">
+    <div class="card"> -->
+      <!-- <h3>Card 4</h3>
+      <p>Some text</p>
+      <p>Some text</p> -->
+ <!--       <img src="C:\Users\Deepanjali\Desktop\Deepanjali\NIE\DB Project\database\images\hosp.jpg" class="w3-circle" alt="Hospitality" style="width:100%" height="250px" style="border-radius: 50px"> -->
+      <!-- <p style="color: white">Check out the Cultural Events of this year!</p> -->
+      <!-- <form action="http://localhost:5000/admin_hospitality/">
+      <button type="Hospitality Committee" action="/admin_hospitality/">Hospitality Committee</button>
+      </form>
+    </div>
+  </div>  -->
+
+</div>
+
+</body>
+</html>
