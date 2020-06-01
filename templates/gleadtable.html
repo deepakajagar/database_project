@@ -8,7 +8,7 @@
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 70%;
+  width: 40%;
 }
 
 td, th {
@@ -35,19 +35,27 @@ tr:nth-child(odd) {
     <header>
 
       <div class="container">
-        
+
+<!-- 
+      </div>
+    </header> -->
     <!-- end header -->
 
     <!-- section intro -->
     <section id="intro">
       <div class="intro-content">
-        <h3 style="text-align: center; font-family: sans-serif;">Overall Committees Info</h3>
+        <h3 style="text-align: center; font-family: sans-serif;">Current Lead Info</h3>
+<!-- <body> -->
+
+<!-- </head> -->
+
+<!-- <body> -->
+<!-- <div id="wrapper"> -->
 <table align='center' cellspacing=2 cellpadding=5 id="data_table" border="1">
+
   <th>
-    <th>Name</th>
-    <th>USN</th>
-    <th>Position</th>
-    <th>Committee Name</th>
+    <th>Lead Branch</th>
+    <th>Total Score</th>
   </th>
 
 
@@ -56,20 +64,17 @@ tr:nth-child(odd) {
 
   <tr>
     <td>{{column['']}}</td>
-    <td>{{column['name']}}</td>
-    <td>{{column['usn']}}</td> 
-    <td>{{column['position']}}</td>
-    <td>{{column['cname']}}</td>
+    <td>{{column['branch']}}</td>
+    <td>{{column['gtotal']}}</td> 
   </tr>
 
 {%endfor%}
 
 
+
+
+
+
 </table>
-</div>
-</section>
-</div>
-</header>
-</div>
 </body>
 </html>

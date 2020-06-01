@@ -47,7 +47,7 @@ button:hover {
 }
 
 /* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
+.addbtn {
   float: left;
   width: 20%;
 }
@@ -66,8 +66,8 @@ button:hover {
 
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 300px) {
-  .cancelbtn, .signupbtn {
-     width: 100%;
+  .addbtn {
+     width: 20%;
   }
 }
 </style>
@@ -83,7 +83,7 @@ button:hover {
     <input type="text" placeholder="Enter Full Name" name="fullname" required><br>
  -->
     <label for="usn"><b>USN</b></label>
-    <input type="text" placeholder="Enter USN to be deleted" name="usn" required><br>
+    <input type="text" style="width: 20%" placeholder="Enter USN to be deleted" name="usn" required><br>
 
     <!-- <label for="branch"><b>Branch</b></label>
     <input type="text" placeholder="Enter Branch" name="branch" required>

@@ -2,19 +2,136 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="..\static\css/bootstrap.css" rel="stylesheet" />
+  <link href="..\static\css/bootstrap-responsive.css" rel="stylesheet" />
+  <link href="..\static\css/prettyPhoto.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link href="..\static\css/style.css" rel="stylesheet">
+
+  <!-- Theme skin -->
+  <link id="t-colors" href="color/default.css" rel="stylesheet" />
+
+  <!-- Fav and touch icons -->
+  <<!-- link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png" />
+  <link rel="shortcut icon" href="ico/favicon.png" /> -->
+
+  <!-- =======================================================
+    Theme Name: Remember
+    Theme URL: https://bootstrapmade.com/remember-free-multipurpose-bootstrap-template/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+</head>
+
+<body>
+  <div id="wrapper">
+    <!-- start header -->
+    <header>
+      <div class="top">
+        <div class="container">
+          <div class="row">
+            <div class="span6">
+              <ul class="topmenu">
+               <!--  <li><a href="#">Home</a> &#47;</li>
+                <li><a href="#">Terms</a> &#47;</li>
+                <li><a href="#">Privacy policy</a></li> -->
+              </ul>
+            </div>
+            <div class="span6">
+
+            
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+
+
+        <div class="row nomargin">
+          <div class="span4">
+            <div class="logo">
+              <h1><a href="index.html"><i></i>TechNIEks</a></h1>
+            </div>
+          </div>
+          <div class="span8">
+            <div class="navbar navbar-static-top">
+              <div class="navigation">
+                <nav>
+                  <ul class="nav topnav">
+                
+                  </ul>
+                </nav>
+              </div>
+              <!-- end navigation -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+
+    <!-- section intro -->
+    <section id="intro">
+      <div class="intro-content">
+        <!-- <h2>Official Page of TechNIEks!</h2> -->
+        <h3>Choose from the following committees</h3>
+        <div>
+        <br>
+        <br>
+        <br>
+  
+          <div class="column">
+    <!-- <div class="card"> -->
+      <!-- <img src="..\static\img\top3.jpg" class="w3-circle" alt="Office Bearers" style="width:100%" height="250px" style="border-radius: 50px"> -->
+      <!-- <p style="color: white"></p> -->
+        <form action="http://localhost:5000/top_3/">
+          <button type="Office Bearers" class="button" action="/top_3/">Office Bearers</button>
+        </form>
+    <!-- </div> -->
+      </div>
+
+  <div class="column">
+    <!-- <div class="card"> -->
+      
+       <!-- <img src="..\static\img\cultural!.jpg" class="w3-circle" alt="Cultural" style="width:100%" height="250px" style="border-radius: 50px"> -->
+     
+      <form action="http://localhost:5000/cultural/">
+      <button type="Cultural Committee" class="button" action="/cultural/">Cultural Committee</button>
+      </form>
+    <!-- </div> -->
+  </div>
+  
+  <div class="column">
+    <!-- <div class="card"> -->
+      
+       <!-- <img src="..\static\img\design.jpg" class="w3-circle" alt="Design" style="width:100%" height="250px" style="border-radius: 50px"> -->
+     
+      <form action="http://localhost:5000/design/">
+      <button type="Design Committee" class="button" action="/design/">Design Committee</button>
+      </form>
+    <!-- </div> -->
+  </div> 
+
+  <div class="column">
+  
+      <form action="http://localhost:5000/marketing/">
+      <button type="Marketing Committee" class="button" action="/marketing/">Marketing Committee</button>
+    </form>
+    <!-- </div> -->
+  </div> 
+      
+    </div>
+    </div>
+   </section>
+
+</body>
+
 <style>
-
-
-.newspaper {
-  -webkit-column-count: 3; /* Chrome, Safari, Opera */
- /* -moz-column-count: 3; /* Firefox */*/
-  column-count: 3;
-
-  -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
-  /*-moz-column-gap: 40px; /* Firefox */*/
-  column-gap: 40px;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -83,101 +200,22 @@ body {
   font-size: 18px;
 }
 
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 8px 5px;
+  cursor: pointer;
+}
+
 .card button:hover {
   opacity: 0.7;
 }
 </style>
-</head>
-<body>
 
-
-
-
-   <div class="column">
-    <div class="card">
-      <!-- <h3>Card 3</h3>
-      <p>Some text</p>
-      <p>Some text</p> -->
-      <img src="C:\Users\Deepanjali\Desktop\Deepanjali\NIE\DB Project\database\images\top3.jpg" class="w3-circle" alt="Office Bearers" style="width:100%" height="250px" style="border-radius: 50px">
-      <p style="color: white"></p>
-      <form action="http://localhost:5000/top_3/">
-      <button type="Office Bearers" action="/top_3/">Office Bearers</button>
-      </form>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-      
-       <img src="C:\Users\Deepanjali\Desktop\Deepanjali\NIE\DB Project\database\images\cultural!.jpg" class="w3-circle" alt="Cultural" style="width:100%" height="250px" style="border-radius: 50px">
-     
-      <form action="http://localhost:5000/cultural/">
-      <button type="Cultural Committee" action="/cultural/">Cultural Committee</button>
-      </form>
-    </div>
-  </div>
-  
-<!--   <div class="column">
-    <div class="card">
-      
-       <img src="C:\Users\Deepanjali\Desktop\Deepanjali\NIE\DB Project\database\images\spons!.jpg" class="w3-circle" alt="Sponsorship" style="width:100%" height="250px" style="border-radius: 50px">
-      
-      <form action="http://localhost:5000/sponsorship/">
-      <button type="Sponsorship Committee" action="/sponsorship/">Sponsorship Committee</button>
-      </form>
-    </div>
-  </div>  -->
-  <div class="column">
-    <div class="card">
-      
-       <img src="C:\Users\Deepanjali\Desktop\Deepanjali\NIE\DB Project\database\images\design.jpg" class="w3-circle" alt="Design" style="width:100%" height="250px" style="border-radius: 50px">
-     
-      <form action="http://localhost:5000/design/">
-      <button type="Design Committee" action="/design/">Design Committee</button>
-      </form>
-    </div>
-  </div> 
-
-  <div class="column">
-    <div class="card">
-      <!-- <h3>Card 4</h3>
-      <p>Some text</p>
-      <p>Some text</p> -->
-       <img src="C:\Users\Deepanjali\Desktop\Deepanjali\NIE\DB Project\database\images\mark.jpg" class="w3-circle" alt="Marketin" style="width:100%" height="250px" style="border-radius: 50px">
-      <!-- <p style="color: white">Check out the Cultural Events of this year!</p> -->
-      <form action="http://localhost:5000/marketing/">
-      <button type="Marketing Committee" action="/marketing/">Marketing Committee</button>
-    </form>
-    </div>
-  </div> 
-
- <!--  <div class="column">
-    <div class="card"> -->
-      <!-- <h3>Card 4</h3>
-      <p>Some text</p>
-      <p>Some text</p> -->
-       <!-- <img src="C:\Users\Deepanjali\Desktop\Deepanjali\NIE\DB Project\database\recep.jpg" class="w3-circle" alt="Reception" style="width:100%" height="250px" style="border-radius: 50px"> -->
-      <!-- <p style="color: white">Check out the Cultural Events of this year!</p> -->
-     <!--  <form action="http://localhost:5000/reception/">
-      <button type="Reception Committee" action="/reception/">Reception Committee</button>
-      </form>
-    </div>
-  </div> 
-
-  <div class="column">
-    <div class="card"> -->
-      <!-- <h3>Card 4</h3>
-      <p>Some text</p>
-      <p>Some text</p> -->
-      <!--  <img src="C:\Users\Deepanjali\Desktop\Deepanjali\NIE\DB Project\database\images\hosp.jpg" class="w3-circle" alt="Hospitality" style="width:100%" height="250px" style="border-radius: 50px"> -->
-      <!-- <p style="color: white">Check out the Cultural Events of this year!</p> -->
-      <!-- <form action="http://localhost:5000/hospitality/">
-      <button type="Hospitality Committee" action="/hospitality/">Hospitality Committee</button>
-      </form>
-    </div>
-  </div>  -->
-
-</div>
-
-</body>
 </html>
